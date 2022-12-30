@@ -1,0 +1,10 @@
+h1{
+    @extend .titulos;
+    font-size: $font-size*6;
+    text-decoration: underline;
+}
+
+h2{
+    @extend .titulos;
+    font-size: 40px;
+}

@@ -1,0 +1,16 @@
+body{
+    margin: 0px;
+    background-color: $color2;
+    font-family: $font;
+    position: relative;
+    padding-bottom: 150px;
+    min-height: 100vh;
+
+    main{
+        margin: auto;
+        width: 90%;
+        max-width: 900px;
+        color: $color4;
+        font-size: $font-size*2;
+    }
+}

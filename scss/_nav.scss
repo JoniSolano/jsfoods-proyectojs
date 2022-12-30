@@ -1,0 +1,21 @@
+.navbar{
+    align-items: center;
+    @include box($font-size*3, bold, none, 0, $color1, $color4);
+    @include size (100%, auto, 0, 5px 40px);
+
+    background-color: $color4;
+
+    img{
+        height: 70px;
+    }
+
+    button{
+        transition: all 300ms ease;
+        @include box($font-size*2, bold, $border, $border-radius*2, $color4, $color1);
+        @include size(auto, auto, 0, 5px 5px);
+    }
+
+    button:hover{
+        background-color: $color2;
+    }
+}

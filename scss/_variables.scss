@@ -1,0 +1,36 @@
+$color1: #85586F;
+$color2: #AC7D88;
+$color3: #DEB6AB;
+$color4: #F8ECD1;
+$color5: #FF7171;
+$font: 'Dosis', sans-serif;
+$font-size: 10px;
+$txtshdw: 0px 0px 15px $color1;
+$box-shadow:  0px 3px 6px 0 #000000;
+$border-radius: 10px;
+$border: 2px solid $color1;
+
+// Extends
+.titulos{
+    color: $color4;
+    text-align: center;
+    text-shadow: $txtshdw;
+    padding: 30px 0;
+}
+
+// Mixins
+@mixin size($width, $height, $margin, $padding){
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin box ($size, $weight, $borde, $radius, $color, $background){
+    font-size: $size;
+    font-weight: $weight;
+    border: $borde;
+    border-radius: $radius;
+    color: $color;
+    background-color: $background;
+}

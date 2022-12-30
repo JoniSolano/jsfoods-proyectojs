@@ -1,0 +1,27 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include box($font-size*2, bold, none, 0, $color1, $color4);
+    @include size (100%, auto, 0, 5px 40px);
+
+    img{
+        height: 40px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $color1;
+    }
+
+    i{
+        padding: 0 10px;
+        transition: .3s;
+    }
+
+    i:hover{
+        color: $color5;
+    }
+}
