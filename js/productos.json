@@ -1,0 +1,56 @@
+[
+    {
+        "id":"1",
+        "nombre":"Pizza Muzzarella",
+        "precio":"1100",
+        "img":"../img/pizza-muzzarella.jpg"
+    },
+    {
+        "id":"2",
+        "nombre":"Pizza Napolitana",
+        "precio":"1300",
+        "img":"../img/pizza-napolitana.jpg"
+    },
+    {
+        "id":"3",
+        "nombre":"Pizza Fugazzeta",
+        "precio":"1300",
+        "img":"../img/pizza-fugazza.jpg"
+    },
+    {
+        "id":"4",
+        "nombre":"Cheese Burguer",
+        "precio":"1000",
+        "img":"../img/cheese-burguer.jpg"
+    },
+    {
+        "id":"5",
+        "nombre":"Bacon Burguer",
+        "precio":"1200",
+        "img":"../img/bacon-burguer.jpg"
+    },
+    {
+        "id":"6",
+        "nombre":"Onion Burguer",
+        "precio":"1300",
+        "img":"../img/onion-burguer.jpg"
+    },
+    {
+        "id":"7",
+        "nombre":"Cerveza Rubia",
+        "precio":"500",
+        "img":"../img/cerveza-rubia.jpg"
+    },
+    {
+        "id":"8",
+        "nombre":"Cerveza Roja",
+        "precio":"500",
+        "img":"../img/cerveza-roja.jpg"
+    },
+    {
+        "id":"9",
+        "nombre":"Cerveza Negra",
+        "precio":"500",
+        "img":"../img/cerveza-negra.jpg"
+    }
+]

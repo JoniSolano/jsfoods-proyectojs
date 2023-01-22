@@ -30,6 +30,7 @@
         @include size(auto, auto, 0, 5px 5px);
 
         a{
+            text-decoration: none;
             color: $color4;
         }
     }

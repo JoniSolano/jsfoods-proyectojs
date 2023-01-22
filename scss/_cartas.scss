@@ -58,13 +58,13 @@
 }
 
 //Botones carrito
-.boton{
+.btnVaciar{
     transition: all 300ms ease;
     @include box($font-size+4, bold, $border, $border-radius*2, $color1, $color4);
     @include size(auto, auto, 0, 5px 5px);
 }
 
-.boton:hover{
+.btnVaciar:hover{
     background-color: $color1;
     color: $color4;
 }

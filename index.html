@@ -29,8 +29,9 @@
             <div>
                 <a class="btnpage" href="pages/contacto.html">Contacto</a>
                 <button>
-                    <a href="pages/carrito.html">
+                    <a class="btnCarrito" href="pages/carrito.html">
                         <i class="bi bi-cart3"></i>
+                        <span class="numero">0</span>
                     </a>
                 </button>
             </div>
@@ -39,18 +40,8 @@
 
     <main>
         <h1>Bienvenidos a JSFoods</h1>
-        <section>
-            <div class="row" id="contenedorProductos"></div>
-        </section>
 
-        <section>
-            <h2>Carrito de compras</h2>
-            <h3>Total compra: <span id="total"></span></h3>
-            <button class="boton" id="verCarrito">Ver Carrito</button>
-            <button class= "boton" id="vaciarCarrito">Vaciar Carrito</button>
-
-            <div id="contenedorCarrito" class="row"></div>
-        </section>
+        <div class="row" id="contenedorProductos"></div>
     </main>
 
     <footer class="animate__animated animate__fadeInUp">
