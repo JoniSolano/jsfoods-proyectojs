@@ -1,0 +1,64 @@
+.conteiner-formulario{
+
+    display: grid;
+    grid-template-areas: 
+    "caja1 caja1 caja1"
+    "caja2 caja2 caja3"
+    "caja2 caja2 caja3"
+    ;
+    .contactame{
+        grid-area: caja1;
+    }
+    .formulario{
+        grid-area: caja2;
+    }
+    .datos{
+        grid-area: caja3;
+    }
+
+    .formulario{
+        
+        form{
+
+            .campo, textarea{
+                @include box($font-size+5, bold, $border, $border-radius/2, #000000, $color4);
+                @include size(100%, auto, 0 0 10px, 15px 10px);
+            }
+
+            textarea{
+                height: 160px;
+            }
+
+            .btn-enviar{
+                @include box($font-size*2, bold, none, $border-radius*3, $color1, $color4);
+                @include size(150px, auto, 0, 10px)
+            }
+
+            .btn-enviar:hover{
+                background-color: #85586F;
+                color: #F8ECD1;
+            }
+        }
+    }
+
+    .datos{
+        ul{
+            list-style-type: none;
+            text-align: right;
+    
+            li{
+                padding: 5px 0px;
+    
+                a{
+                    color: $color4;
+                    text-decoration: none;
+                    margin-bottom: 5px;
+    
+                    i{
+                        margin-left: 10px;
+                    }
+                }
+            }  
+        }
+    }
+}

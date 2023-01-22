@@ -40,6 +40,17 @@ h2 {
   background-color: #F8ECD1; }
   .navbar img {
     height: 70px; }
+  .navbar .btnpage {
+    text-decoration: none;
+    transition: .3s;
+    text-transform: uppercase;
+    color: #85586F;
+    font-weight: bold;
+    padding-right: 15px;
+    font-size: 1.25rem; }
+    .navbar .btnpage:hover {
+      color: #FF7171;
+      background-color: rgba(0, 0, 0, 0); }
   .navbar button {
     transition: all 300ms ease;
     font-size: 20px;
@@ -52,6 +63,8 @@ h2 {
     height: auto;
     margin: 0;
     padding: 5px 5px; }
+    .navbar button a {
+      color: #F8ECD1; }
   .navbar button:hover {
     background-color: #AC7D88; }
 
@@ -148,6 +161,54 @@ h2 {
   background-color: #85586F;
   color: #F8ECD1; }
 
+.conteiner-formulario {
+  display: grid;
+  grid-template-areas: "caja1 caja1 caja1" "caja2 caja2 caja3" "caja2 caja2 caja3"; }
+  .conteiner-formulario .contactame {
+    grid-area: caja1; }
+  .conteiner-formulario .formulario {
+    grid-area: caja2; }
+  .conteiner-formulario .datos {
+    grid-area: caja3; }
+  .conteiner-formulario .formulario form .campo, .conteiner-formulario .formulario form textarea {
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid #85586F;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #F8ECD1;
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+    padding: 15px 10px; }
+  .conteiner-formulario .formulario form textarea {
+    height: 160px; }
+  .conteiner-formulario .formulario form .btn-enviar {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    color: #85586F;
+    background-color: #F8ECD1;
+    width: 150px;
+    height: auto;
+    margin: 0;
+    padding: 10px; }
+  .conteiner-formulario .formulario form .btn-enviar:hover {
+    background-color: #85586F;
+    color: #F8ECD1; }
+  .conteiner-formulario .datos ul {
+    list-style-type: none;
+    text-align: right; }
+    .conteiner-formulario .datos ul li {
+      padding: 5px 0px; }
+      .conteiner-formulario .datos ul li a {
+        color: #F8ECD1;
+        text-decoration: none;
+        margin-bottom: 5px; }
+        .conteiner-formulario .datos ul li a i {
+          margin-left: 10px; }
+
 footer {
   position: absolute;
   bottom: 0;
@@ -179,4 +240,8 @@ footer {
   h1 {
     font-size: 40px; }
   h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  footer {
+    flex-direction: column; }
+    footer img {
+      margin: 15px 5px; } }
