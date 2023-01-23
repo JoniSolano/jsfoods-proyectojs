@@ -58,13 +58,51 @@
 }
 
 //Botones carrito
-.btnVaciar{
-    transition: all 300ms ease;
-    @include box($font-size+4, bold, $border, $border-radius*2, $color1, $color4);
-    @include size(auto, auto, 0, 5px 5px);
+.carrito-acciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+
+    .acciones-izq{
+        .btnVaciar{
+            transition: all 300ms ease;
+            @include box($font-size+4, bold, $border, $border-radius*2, $color1, $color4);
+            @include size(auto, auto, 0, 5px 5px);
+        }
+
+        .btnVaciar:hover{
+            background-color: $color1;
+            color: $color4;
+        }
+    }
+
+    .acciones-der{
+        display: flex;
+        align-items: center;
+
+        .compra-total{
+            display: flex;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-right: 1rem;
+        }
+
+        .btnComprar{
+            transition: all 300ms ease;
+            @include box($font-size*2, bold, $border, $border-radius*2, $color1, $color4);
+            @include size(auto, auto, 0, 5px 5px);
+
+        }
+
+        .btnComprar:hover{
+            background-color: $color1;
+            color: $color4;
+        }
+    }
+
 }
 
-.btnVaciar:hover{
-    background-color: $color1;
-    color: $color4;
+.disabled{
+    display: none;
 }
